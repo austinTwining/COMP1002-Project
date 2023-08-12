@@ -1,0 +1,182 @@
+/*Button Styling*/
+.btn{
+    text-decoration: none;
+    background-color: black;
+    border: solid 2px black;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 25px;
+}
+
+/* Header Styling */
+header{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas: 'logo nav';
+}
+.header_logo{
+    width: 100px;
+    height: auto;
+}
+header > div{
+    grid-area: logo;
+    align-self: center;
+    padding: 10px 20px;
+}
+header > nav{
+    grid-area: nav;
+}
+header > nav > menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+header > nav > menu > li{
+    list-style: none;
+}
+header > nav > menu > li > a{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 1000;
+    color: black;
+}
+
+/* Global styling*/
+body{
+    margin: 0px;
+}
+
+/*Home page styling*/
+.page_home{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas:
+    'header header'
+    'hero hero'
+    'premier intro'
+    'video video';
+}
+
+.masthead{
+    grid-area: hero;
+    background-image: url("../img/Woman-listening-to-vintage-Walkman-stereo-headphones.webp");
+    height: 80vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.masthead > div{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.masthead > div > img{
+    width: 30%;
+    height: auto;
+}
+
+.premier_image{
+    grid-area: premier;
+}
+.premier_image > img{
+    width: 100%;
+    height: auto;
+}
+.product_intro{
+    grid-area: intro;
+}
+.product_intro > div{
+    padding: 15%;
+}
+.product_intro > div > img{
+    width: 40%;
+    height: auto;
+}
+.product_intro > div > p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding: 60px 0px;
+}
+.product_video{
+    grid-area: video;
+}
+.product_video > div > iframe{
+    width: 100%;
+    height: 80vh;
+}
+/* Product Page Styling */
+.page_product{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas:
+    'header header'
+    'image buy'
+    'banner banner'
+    'features included'
+    'footer footer';
+}
+.product_image{
+    grid-area: image;
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
+.product_image > img{
+    width: 50%;
+    height: auto;
+    border-radius: 18px;
+}
+.product_buy{
+    grid-area: buy;
+}
+.product_buy > img{
+    width: 200px;
+    height: auto;
+}
+.product_banner{
+    grid-area: banner;
+}
+.product_banner > img{
+    width: 100%;
+    height: auto;
+}
+.product_features{
+    grid-area: features;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    justify-self: center;
+    align-self: center;
+}
+.product_included{
+    grid-area: included;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    justify-self: center;
+    align-self: center;
+}
+#product_price{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/*about page styling*/
+#about_section{
+    font-family: 'Montserrat', sans-serif;
+    margin: 45px;
+}
+
+/*contact form styling*/
+#contact_form{
+    text-align: center;
+}
+   
